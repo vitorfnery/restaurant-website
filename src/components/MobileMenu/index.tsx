@@ -2,6 +2,7 @@
 import Image from "next/image";
 import {
   MOBILE_MENU_LINKS,
+  MOBILE_MENU_CLOSE_OPEN,
   LINK_USER_LOGIN,
   CART_ICON_INFO,
 } from "@/constants";
@@ -11,6 +12,7 @@ import CartIcon from "../CartIcon";
 
 const MobileMenu = () => {
   const links = MOBILE_MENU_LINKS;
+  const openCloseToggle = MOBILE_MENU_CLOSE_OPEN;
   const loginLinks = LINK_USER_LOGIN;
   const cartIcon = CART_ICON_INFO;
   const [open, setOpen] = useState(false);
@@ -21,18 +23,18 @@ const MobileMenu = () => {
     <div>
       {!open ? (
         <Image
-          src="/open.png"
+          src={openCloseToggle.open}
           alt=""
-          width={20}
-          height={20}
+          width={openCloseToggle.width}
+          height={openCloseToggle.height}
           onClick={handleOpen}
         />
       ) : (
         <Image
-          src="/close.png"
+          src={openCloseToggle.close}
           alt=""
-          width={20}
-          height={20}
+          width={openCloseToggle.width}
+          height={openCloseToggle.height}
           onClick={handleOpen}
         />
       )}
