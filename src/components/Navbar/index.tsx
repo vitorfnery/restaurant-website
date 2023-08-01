@@ -16,7 +16,7 @@ const Navbar = () => {
   const phone = NAVBAR_PHONE;
   const user = false;
   return (
-    <div className="h-12 md:h-24 text-red-500 p-4 lg:px-20 xl:px-40 flex justify-between items-center border-b-2 border-b-500 uppercase">
+    <div className="h-12 md:h-24 text-red-500 p-4 lg:px-20 xl:px-40 flex justify-between items-center border-b-2 border-b-red-500 uppercase">
       {/* LEFT LINKS */}
       <div className="hidden md:flex gap-4 flex-1">
         {links.map(({ id, url, title }) => (
