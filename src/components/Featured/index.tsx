@@ -1,7 +1,9 @@
 import { featuredProducts } from "@/data/data";
+import { FEATURED_INFO } from "@/constants";
 import Image from "next/image";
 
 const Featured = () => {
+  const { btn } = FEATURED_INFO;
   return (
     <div className="w-screen overflow-x-scroll text-red-500">
       {/* WRAPPER */}
@@ -29,7 +31,7 @@ const Featured = () => {
               <p className="p-4 2xl:p-8">{item.desc}</p>
               <span className="text-xl font-bold">$ {item.price}</span>
               <button className="bg-red-500 text-white p-2 rounded-md">
-                Add to cart
+                {btn}
               </button>
             </div>
           </div>
