@@ -10,3 +10,4 @@ export * from "@/constants/slider-info";
 export * from "@/constants/featured-info";
 export * from "@/constants/offer-info";
 export * from "@/constants/price-info";
+export * from "@/constants/login-info";
