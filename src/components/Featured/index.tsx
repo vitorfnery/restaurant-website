@@ -6,9 +6,7 @@ const Featured = () => {
   const { btn } = FEATURED_INFO;
   return (
     <div className="w-screen overflow-x-scroll text-red-500">
-      {/* WRAPPER */}
       <div className="w-max flex">
-        {/* SINGLE ITEM */}
         {featuredProducts.map((item) => (
           <div
             key={item.id}
@@ -17,13 +15,11 @@ const Featured = () => {
                       flex flex-col items-center justify-around p-4 hover:bg-fuchsia-50 transition-all duration-300
                       "
           >
-            {/* IMAGE CONTAINER */}
             {item.img && (
               <div className="relative flex-1 w-full hover:rotate-[60deg] transition-all duration-500">
                 <Image src={item.img} alt="" fill className="object-contain" />
               </div>
             )}
-            {/* TEXT CONTAINER */}
             <div className="flex-1 flex flex-col items-center justify-center text-center gap-4">
               <h1 className="text-xl xl:text-2xl 2xl:text-3xl font-bold uppercase">
                 {item.title}
