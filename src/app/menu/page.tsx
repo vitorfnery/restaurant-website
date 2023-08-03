@@ -15,7 +15,7 @@ const Menu = () => {
         >
           <div className={`text-${category.color} w-1/2 flex flex-col`}>
             <h1 className="uppercase font-bold text-3xl">{category.title}</h1>
-            <p className="text-sm my-8 h-[120px]">{category.desc}</p>
+            <p className="text-sm my-8 min-h-[7.5rem]">{category.desc}</p>
             <button
               className={`hidden xl:block bg-${category.color} text-${
                 category.color === "black" ? "white" : "red-500"
