@@ -8,7 +8,7 @@ const Footer = () => {
       <Link href={url} className="font-bold text-xl">
         {title}
       </Link>
-      <p>{info}</p>
+      <p className="text-center text-sm sm:text-base">{info}</p>
     </div>
   );
 };

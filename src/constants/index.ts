@@ -4,6 +4,7 @@ export * from "@/constants/menu-info";
 export * from "@/constants/menu-category-info";
 export * from "@/constants/mobileMenu-info";
 export * from "@/constants/cartIcon-info";
+export * from "@/constants/cart-info";
 export * from "@/constants/footer-info";
 export * from "@/constants/slider-info";
 export * from "@/constants/featured-info";

@@ -1,0 +1,15 @@
+export const CART_INFO = {
+  title: "sicilian",
+  size: "Large",
+  singlePrice: "$79.90",
+  exclude: "X",
+  subtotal: "Subtotal (3 items)",
+  subtotalPrice: "$81.70",
+  service: "Service Cost",
+  servicePrice: "$0.00",
+  delivery: "Delivery Cost",
+  deliveryPrice: "FREE!",
+  total: "TOTAL(INCL. VAT)",
+  totalPrice: "$81.70",
+  checkoutBtn: "CHECKOUT",
+};
